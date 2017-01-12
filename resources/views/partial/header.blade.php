@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Basic -->
-        <meta charset="utf-8">
-        <title>YOURStore - Responsive HTML5 Template</title>
-        <meta name="keywords" content="HTML5 Template" />
-        <meta name="description" content="YOURStore - Responsive HTML5 Template">
-        <meta name="author" content="etheme.com">
-        <link rel="shortcut icon" href="favicon.ico">
-        <!-- Mobile Specific Metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- External Plugins CSS -->
-        <link rel="stylesheet" href="external/slick/slick.css">
-        <link rel="stylesheet" href="external/slick/slick-theme.css">
-        <link rel="stylesheet" href="external/magnific-popup/magnific-popup.css">
-        <link rel="stylesheet" href="external/bootstrap-select/bootstrap-select.css">   
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- Icon Fonts  -->
-        <link rel="stylesheet" href="font/style.css">
-        <!-- Head Libs -->
-        <!-- Modernizr -->
-        <script src="external/modernizr/modernizr.js"></script>
-    </head>
-<body>
-<!-- HEADER section -->
-        <div class="header-wrapper">
+
+<div class="header-wrapper">
             <header id="header">
                 <div class="container">
                     <div class="row">
@@ -167,7 +141,7 @@
                                                     <a href="#" class="icon icon-close cart__close"><span>CLOSE</span></a>
                                                     <ul>
                                                         <li class="cart__item">
-                                                            <div class="cart__item__image pull-left"><a href="#"><img src="images/product/product-1.jpg" alt=""/></a></div>
+                                                            <div class="cart__item__image pull-left"><a href="#"><img src="/assets/images/product/product-1.jpg" alt=""/></a></div>
                                                             <div class="cart__item__control">
                                                                 <div class="cart__item__delete"><a href="#" class="icon icon-delete"><span>Delete</span></a></div>
                                                                 <div class="cart__item__edit"><a href="#" class="icon icon-edit"><span>Edit</span></a></div>
@@ -193,7 +167,7 @@
                                                             </div>
                                                         </li>
                                                         <li class="cart__item">
-                                                            <div class="cart__item__image pull-left"><a href="#"><img src="images/product/product-2.jpg" alt=""/></a></div>
+                                                            <div class="cart__item__image pull-left"><a href="#"><img src="/assets/images/product/product-2.jpg" alt=""/></a></div>
                                                             <div class="cart__item__control">
                                                                 <div class="cart__item__delete"><a href="#" class="icon icon-delete"><span>Delete</span></a></div>
                                                                 <div class="cart__item__edit"><a href="#" class="icon icon-edit"><span>Edit</span></a></div>
@@ -223,10 +197,6 @@
                     </div>
                 </div>
             </header>
-        </div>
-        <!-- End HEADER section -->
-    </body>
-        </script>
-        </head>
-        </html>
+</div>
+        
 
