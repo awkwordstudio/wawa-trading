@@ -31,7 +31,7 @@
                     <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-6 col-xl-7">
                             <!-- logo start --> 
-                            <a href="index.html"><img class="logo replace-2x img-responsive" src="images/logo.png" alt=""/> </a> 
+                            <a href="index.html"><img class="logo replace-2x img-responsive" src="/assets/images/logo.png" alt=""/> </a> 
                             <!-- logo end --> 
                         </div>
                         <div class="col-sm-8 col-md-8 col-lg-6 col-xl-5 text-right">
