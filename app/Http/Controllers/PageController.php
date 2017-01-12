@@ -86,4 +86,8 @@ class PageController extends Controller
       //$gl =update($req->all());
        
    }
+   public function app()
+   {
+       return view('app');
+   }
 }

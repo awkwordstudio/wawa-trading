@@ -33,6 +33,9 @@ Route::get('/product/index','ProductController@index');
 Route::get('glasses/edit/{id}','PageController@edit');
 Route::patch('glasses/edit/{id}','PageController@update');
 
+Route::get('/app','PageController@app');
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
