@@ -33,6 +33,9 @@ Route::get('checkout','CheckoutController@check');
 
 
 
+Route::get('/app','PageController@app');
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
