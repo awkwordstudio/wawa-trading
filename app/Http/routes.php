@@ -29,6 +29,7 @@ Route::get('home','HomeController@home');
 Route::get('category','CategoryController@cat');
 Route::get('checkout','CheckoutController@check');
 
+
 //page controller
 
 /*=============================================
@@ -48,6 +49,8 @@ Route::post('/admin/product/create','ProductController@store');
 
 Route::get('/app','PageController@app');
 
+Route::get('admin/category/create','CategoryController@create');
+Route::post('admin/category/create','CategoryController@store');
 
 /*
 |--------------------------------------------------------------------------
