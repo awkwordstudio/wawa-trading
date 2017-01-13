@@ -11,27 +11,27 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/home','PageController@home');
-Route::get('/category','PageController@category');
-Route::get('/bag','PageController@bag');
-Route::get('/glasses','PageController@glasses');
-Route::get('/shirt','PageController@shirt');
-Route::get('/shoe','PageController@shoe');
-Route::get('/watch','PageController@watch');
-Route::get('/aboutus','PageController@aboutus');
 
-Route::get('/product/create','ProductController@create');
-Route::post('/product/create','ProductController@store');
+/*====================================
+=            Static pages            =
+====================================*/
 
-Route::get('/product/show/{id}','ProductController@show');
-Route::get('/product/index','ProductController@index');
+Route::get('policy','PageController@policy');
+Route::get('about','PageController@about');
+Route::get('contact','PageController@contact');
+Route::get('app','PageController@app');
 
-Route::get('glasses/edit/{id}','PageController@edit');
-Route::patch('glasses/edit/{id}','PageController@update');
+
+/*=====  End of Static pages  ======*/
+
+Route::get('home','HomeController@home');
+Route::get('category','CategoryController@cat');
+Route::get('checkout','CheckoutController@check');
+
+//page controller
+
+
 
 /*
 |--------------------------------------------------------------------------
