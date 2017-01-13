@@ -57,7 +57,7 @@
 			@yield('content');
 
 			<!--============================
-			=            Footer            =
+			=            Footer           =
 			=============================-->
 			@include('partial.footer')
 

@@ -26,4 +26,5 @@ class PageController extends Controller
         return view('app');
     }   
 
+    
 }
