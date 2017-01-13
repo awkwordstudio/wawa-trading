@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('Content')
+@section('content')
 <h1>Categories Page</h1>
 
 @endsection

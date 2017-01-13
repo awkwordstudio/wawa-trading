@@ -1,8 +1,6 @@
 @extends('app')
 
 @section('content')
-
-
 <div class="content offset-top-0" id="slider">
 			<!--
 				#################################
@@ -18,7 +16,7 @@
 						<!-- SLIDE -1 -->
 						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
 							<!-- MAIN IMAGE --> 
-							<img src="images/slides/slide-1.jpg"  alt="slide1"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" > 
+							<img src="/assets/images/slides/slide-1.jpg"  alt="slide1"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" > 
 							<!-- LAYERS --> 
 							<!-- TEXT -->
 							<div class="tp-caption lfl stb" 
@@ -33,14 +31,14 @@
 								<div class="tp-caption1--wd-1">Spring -Summer 2016</div>
 								<div class="tp-caption1--wd-2">Save 20% on</div>
 								<div class="tp-caption1--wd-3">new arrivals </div>
-								<a href="listing.html" class="link-button button--border-thick" data-text="Shop now!">Shop now!</a>
+								<a href="listing" class="link-button button--border-thick" data-text="Shop now!">Shop now!</a>
 							</div>
 						</li>
 						<!-- /SLIDE -1 -->
 						<!-- SLIDE 2  -->            
 						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
 							<!-- MAIN IMAGE --> 
-							<img src="images/slides/slide-2.jpg"  alt="slide2"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+							<img src="/assets/images/slides/slide-2.jpg"  alt="slide2"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
 							<!-- LAYERS -->
 							<!-- TEXT -->
 							<div class="tp-caption lfr stb" 
@@ -62,7 +60,7 @@
 						<!-- /SLIDE 2  -->						
 						<!-- SLIDE - 3 -->
 						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
-										<img src="images/slides/04/intro_img_03.jpg"  alt="slide3"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+										<img src="/assets/images/slides/04/intro_img_03.jpg"  alt="slide3"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
 									<!-- LAYER NR. 1 -->
 									<div class="tp-caption tp-fade fadeout fullscreenvideo"
 										data-x="0"
@@ -83,10 +81,10 @@
 
 
 										<video class="video-js vjs-default-skin" preload="none" 
-											poster='images/slides/video/video_img.jpg' data-setup="{}">
-											<source src='images/slides/video/explore.mp4' type='video/mp4' />
-											<source src='images/slides/video/explore.webm' type='video/webm' />
-											<source src='images/slides/video/explore.ogv' type='video/ogg'  />
+											poster='/assets/images/slides/video/video_img.jpg' data-setup="{}">
+											<source src='/assets/images/slides/video/explore.mp4' type='video/mp4' />
+											<source src='/assets/images/slides/video/explore.webm' type='video/webm' />
+											<source src='/assets/images/slides/video/explore.ogv' type='video/ogg'  />
 										</video>
 
 									</div>
@@ -128,7 +126,7 @@
 							<div class="col-sm-4 col-md-4 col-lg-4">
 								<a href="listing.html" class="banner zoom-in">
 									<span class="figure">
-										<img src="images/custom/category-3.jpg" alt=""/>
+										<img src="/assets/images/custom/category-3.jpg" alt=""/>
 										<span class="figcaption">
 											<span class="block-table">
 												<span class="block-table-cell">
@@ -143,7 +141,7 @@
 							<div class="col-sm-4 col-md-4 col-lg-4">
 								<a href="listing.html" class="banner zoom-in">
 								<span class="figure">
-									<img src="images/custom/category-2.jpg" alt=""/>
+									<img src="/assets/images/custom/category-2.jpg" alt=""/>
 									<span class="figcaption">
 										<span class="block-table">
 											<span class="block-table-cell">
@@ -158,7 +156,7 @@
 							<div class="col-sm-4 col-md-4 col-lg-4">
 								<a href="listing.html" class="banner zoom-in">
 								<span class="figure">
-									<img src="images/custom/category-1.jpg" alt=""/>
+									<img src="/assets/images/custom/category-1.jpg" alt=""/>
 									<span class="figcaption">
 										<span class="block-table">
 											<span class="block-table-cell">
@@ -195,9 +193,9 @@
 												<!-- product image carousel -->
 												<div class="product__inside__carousel slide" data-ride="carousel">
 													<div class="carousel-inner" role="listbox">
-														<div class="item active"> <a href="product.html"><img src="images/product/product-1.jpg" alt=""></a> </div>
-														<div class="item"> <a href="product.html"><img src="images/product/product-2.jpg" alt=""></a> </div>
-														<div class="item"> <a href="product.html"><img src="images/product/product-3.jpg" alt=""></a> </div>
+														<div class="item active"> <a href="product.html"><img src="/assets/images/product/product-1.jpg" alt=""></a> </div>
+														<div class="item"> <a href="product.html"><img src="/assets/images/product/product-2.jpg" alt=""></a> </div>
+														<div class="item"> <a href="product.html"><img src="/assets/images/product/product-3.jpg" alt=""></a> </div>
 													</div>
 													<!-- Controls --> 
 													<a class="carousel-control next"></a> <a class="carousel-control prev"></a> 
@@ -246,9 +244,9 @@
 												<!-- product info -->
 												<div class="product__inside__info">
 													<ul class="options-swatch options-swatch--color">
-														<li><a href="#"><span class="swatch-label"><img src="images/colors/blue.png"  alt=""/></span></a></li>
-														<li><a href="#"><span class="swatch-label"><img src="images/colors/yellow.png"  alt=""/></span></a></li>
-														<li><a href="#"><span class="swatch-label"><img src="images/colors/red.png"  alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="/assets/images/colors/blue.png"  alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="/assets/images/colors/yellow.png"  alt=""/></span></a></li>
+														<li><a href="#"><span class="swatch-label"><img src="/assets/images/colors/red.png"  alt=""/></span></a></li>
 													</ul>
 													<div class="product__inside__info__btns"> <a href="#" class="btn btn--ys btn--xl"><span class="icon icon-shopping_basket"></span> Add to cart</a>
 													<a href="#" class="btn btn--ys btn--xl visible-xs"><span class="icon icon-favorite_border"></span></a>
@@ -274,7 +272,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-2.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-2.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -324,7 +322,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-3.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-3.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -373,7 +371,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-4.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-4.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -426,7 +424,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-5.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-5.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -474,7 +472,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-6.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-6.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -522,7 +520,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-7.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-7.jpg" alt=""> </a> 
 												<!-- label sold-out -->
 												<div class="product__label--sold-out"> <span>sold<br>
 													out</span> 
@@ -572,7 +570,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-8.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-8.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -624,7 +622,7 @@
 							</div>
 							<!-- /title -->
 							
-							<a class="link-img-hover" href="lookbook.html"><img src="images/custom/lookbook.jpg" class="img-responsive" alt=""></a>
+							<a class="link-img-hover" href="lookbook.html"><img src="/assets/images/custom/lookbook.jpg" class="img-responsive" alt=""></a>
 							
 						</div>
 						<!-- /lookbook -->
@@ -639,7 +637,7 @@
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<a href="listing.html" class="banner zoom-in">
 								<span class="figure">
-									<img src="images/custom/banner-01.jpg" alt=""/>
+									<img src="/assets/images/custom/banner-01.jpg" alt=""/>
 									<span class="figcaption">
 										<span class="block-table">
 											<span class="block-table-cell">
@@ -655,7 +653,7 @@
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<a href="listing.html" class="banner zoom-in">
 									<span class="figure">
-										<img src="images/custom/banner-02.jpg" alt=""/>
+										<img src="/assets/images/custom/banner-02.jpg" alt=""/>
 										<span class="figcaption">
 											<span class="block-table">
 												<span class="block-table-cell">
@@ -671,7 +669,7 @@
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<a href="listing.html" class="banner zoom-in">
 									<span class="figure">
-										<img src="images/custom/banner-03.jpg" alt=""/>
+										<img src="/assets/images/custom/banner-03.jpg" alt=""/>
 										<span class="figcaption">
 											<span class="block-table">
 												<span class="block-table-cell">
@@ -708,7 +706,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-9.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-9.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -752,7 +750,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-10.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-10.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -796,7 +794,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-9.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-9.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -840,7 +838,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-10.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-10.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -897,7 +895,7 @@
 								
 								<div class="promos__image">
 									<a href="lookbook.html" class="link-img-hover">
-									<img src="images/custom/promos.jpg" class="img-responsive" alt="">
+									<img src="/assets/images/custom/promos.jpg" class="img-responsive" alt="">
 									<span class="promos__label">-20%</span>
 									</a>
 								</div>
@@ -923,7 +921,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-11.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-11.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -973,7 +971,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-12.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-12.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 												<!-- /quick-view --> 
@@ -1019,7 +1017,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-11.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-11.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a> 
 												<!-- /quick-view --> 
@@ -1065,7 +1063,7 @@
 										<div class="product__inside">
 											<!-- product image -->
 											<div class="product__inside__image">
-												<a href="product.html"> <img src="images/product/product-12.jpg" alt=""> </a> 
+												<a href="product.html"> <img src="/assets/images/product/product-12.jpg" alt=""> </a> 
 												<!-- quick-view --> 
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 												<!-- /quick-view --> 
@@ -1123,7 +1121,7 @@
 								<div class="slider-blog__item">
 									<div class="row">
 										<div class="col-xs-12 col-sm-2 col-sm-offset-3 box-foto">
-											<img src="images/custom/slider-blog-img01.jpg" alt="">
+											<img src="/assets/images/custom/slider-blog-img01.jpg" alt="">
 										</div>
 										<div class="col-xs-12 col-sm-5 col-xl-4 box-data">
 											<h6>Eleanor  <em>&nbsp;-&nbsp;  designer</em></h6>
@@ -1140,7 +1138,7 @@
 								<div class="slider-blog__item">
 									<div class="row">
 										<div class="col-xs-12 col-sm-2 col-sm-offset-3 box-foto">
-											<img src="images/custom/slider-blog-img02.jpg" alt="">
+											<img src="/assets/images/custom/slider-blog-img02.jpg" alt="">
 										</div>
 										<div class="col-xs-12 col-sm-5 box-data">
 											<h6>Piper  <em>&nbsp;-&nbsp;  designer</em></h6>
@@ -1157,7 +1155,7 @@
 								<div class="slider-blog__item">
 									<div class="row">
 										<div class="col-xs-12 col-sm-2 col-sm-offset-3 box-foto">
-											<img src="images/custom/slider-blog-img03.jpg" alt="">
+											<img src="/assets/images/custom/slider-blog-img03.jpg" alt="">
 										</div>
 										<div class="col-xs-12 col-sm-5 box-data">
 											<h6>MARK   <em>&nbsp;-&nbsp;  designer</em></h6>
@@ -1197,7 +1195,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 												<span class="figure">
-													<img src="images/custom/recent-posts-01.jpg" alt="">
+													<img src="/assets/images/custom/recent-posts-01.jpg" alt="">
 													<span class="figcaption label-top-left">
 														<span>
 															<b>26</b>
@@ -1228,7 +1226,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 											<span class="figure">
-											<img src="images/custom/recent-posts-02.jpg" alt="">
+											<img src="/assets/images/custom/recent-posts-02.jpg" alt="">
 											<span class="figcaption label-top-left">
 											<span>
 											<b>26</b>
@@ -1259,7 +1257,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 											<span class="figure">
-											<img src="images/custom/recent-posts-03.jpg" alt="">
+											<img src="/assets/images/custom/recent-posts-03.jpg" alt="">
 											<span class="figcaption label-top-left">
 											<span>
 											<b>26</b>
@@ -1290,7 +1288,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 											<span class="figure">
-											<img src="images/custom/recent-posts-01.jpg" alt="">
+											<img src="/assets/images/custom/recent-posts-01.jpg" alt="">
 											<span class="figcaption label-top-left">
 											<span>
 											<b>26</b>
@@ -1321,7 +1319,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 											<span class="figure">
-											<img src="images/custom/recent-posts-02.jpg" alt="">
+											<img src="/assets/images/custom/recent-posts-02.jpg" alt="">
 											<span class="figcaption label-top-left">
 											<span>
 											<b>26</b>
@@ -1352,7 +1350,7 @@
 										<div class="col-lg-12 col-xl-6">
 											<a href="blog-post-right-column.html">
 											<span class="figure">
-											<img src="images/custom/recent-posts-03.jpg" alt="">
+											<img src="/assets/images/custom/recent-posts-03.jpg" alt="">
 											<span class="figcaption label-top-left">
 											<span>
 											<b>26</b>
@@ -1386,26 +1384,26 @@
 				<div class="container">
 					<div class="row">
 						<div class="brands-carousel">
-							<div><a href="#"><img src="images/custom/brand-01.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-02.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-03.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-04.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-05.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-06.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-07.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-08.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-09.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-10.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-01.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-02.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-03.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-04.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-05.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-06.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-07.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-08.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-09.png" alt=""></a></div>
-							<div><a href="#"><img src="images/custom/brand-10.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-01.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-02.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-03.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-04.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-05.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-06.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-07.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-08.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-09.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-10.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-01.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-02.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-03.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-04.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-05.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-06.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-07.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-08.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-09.png" alt=""></a></div>
+							<div><a href="#"><img src="/assets/images/custom/brand-10.png" alt=""></a></div>
 						</div>
 					</div>
 				</div>

@@ -24,7 +24,11 @@
 		<script src="/assets/external/modernizr/modernizr.js"></script>
 	</head>
 	<body class="index">
-		<div id="loader-wrapper">
+
+	<!--====================================
+	=            Loader section            =
+	=====================================-->	
+		<!-- <div id="loader-wrapper">
 			<div id="loader">
 				<div class="dot"></div>
 				<div class="dot"></div>
@@ -35,7 +39,7 @@
 				<div class="dot"></div>
 				<div class="dot"></div>
 			</div>
-		</div>
+		</div> -->
 
 			<!--=================================
 			=           Mobile Menu            =
@@ -50,7 +54,6 @@
 			<!--=============================
 			=            Content            =
 			==============================-->
-			
 			@yield('content');
 
 			<!--============================
