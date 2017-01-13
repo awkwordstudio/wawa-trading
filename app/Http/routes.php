@@ -31,6 +31,19 @@ Route::get('checkout','CheckoutController@check');
 
 //page controller
 
+/*=============================================
+=            Product Route            =
+=============================================*/
+Route::get('/admin/product/create','ProductController@create');
+Route::post('/admin/product/create','ProductController@store');
+
+
+
+
+
+/*=====  End of Product Route  ======*/
+
+
 
 
 Route::get('/app','PageController@app');
