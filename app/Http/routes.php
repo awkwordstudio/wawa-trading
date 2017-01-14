@@ -16,12 +16,10 @@
 /*====================================
 =            Static pages            =
 ====================================*/
-
 Route::get('policy','PageController@policy');
 Route::get('about','PageController@about');
 Route::get('contact','PageController@contact');
 Route::get('app','PageController@app');
-
 
 /*=====  End of Static pages  ======*/
 
@@ -30,27 +28,20 @@ Route::get('category','CategoryController@cat');
 Route::get('checkout','CheckoutController@check');
 
 
-//page controller
-
 /*=============================================
 =            Product Route            =
 =============================================*/
 Route::get('/admin/product/create','ProductController@create');
 Route::post('/admin/product/create','ProductController@store');
-
-
-
-
-
+Route::get('/admin/product/show/{id}','ProductController@show');
+Route::get('/admin/product/show','ProductController@display');
 /*=====  End of Product Route  ======*/
 
 
-
-
-Route::get('/app','PageController@app');
-
 Route::get('admin/category/create','CategoryController@create');
 Route::post('admin/category/create','CategoryController@store');
+Route::get('/admin/product/index','CategoryController@index');
+
 
 /*
 |--------------------------------------------------------------------------
