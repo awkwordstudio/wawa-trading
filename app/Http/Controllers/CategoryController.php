@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Category;
+use App\Product;
 
 class CategoryController extends Controller
 {
@@ -24,8 +25,15 @@ class CategoryController extends Controller
    	$name=$input['name'];
    	$slug=$input['slug'];
    	$description=$input['description'];
-	$category=['name'=>$name,'slug'=>$slug,'description'=>$description];
-	$var=Category::create($category);
+	  $category=['name'=>$name,'slug'=>$slug,'description'=>$description];
+	  $var=Category::create($category);
 	  return $var->name." ".$var->slug." ".$var->description;
    }
+
+   public function index()
+   {
+     $res=Category::All();
+     return view('/admin/product/index')->with(['res'=>$res]);
+   }
+
 }

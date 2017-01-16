@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('content')
+@foreach($prod as $p)
 <!-- CONTENT section -->
 		<div id="pageContent">
 			<div class="container">
@@ -493,7 +494,7 @@
 										
 										<!-- product name -->
 										<div class="product__inside__name">
-											<h2><a href="product.html">Mauris lacinia lectus</a></h2>
+											<h2><a href="product.html">{{$p->name}}</a></h2>
 										</div>
 										<!-- /product name --> 
 										<!-- product description --> 
@@ -501,7 +502,7 @@
 										<div class="product__inside__description row-mode-visible"> Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </div>
 										<!-- /product description --> 
 										<!-- product price -->
-										<div class="product__inside__price price-box">$26.00<span class="price-box__old">$28.00</span></div>
+										<div class="product__inside__price price-box">Rs.{{$p->price}}<span class="price-box__old">$28.00</span></div>
 										<!-- /product price --> 
 										<!-- product review --> 
 										<!-- visible only in row-view mode -->
@@ -546,7 +547,7 @@
 										<!-- /product image --> 
 										<!-- product name -->
 										<div class="product__inside__name">
-											<h2><a href="product.html">Mauris lacinia lectus</a></h2>
+											<h2><a href="product.html">{{$p->name}}</a></h2>
 										</div>
 										<!-- /product name -->                 <!-- product description --> 
 										<!-- visible only in row-view mode -->
@@ -884,4 +885,5 @@
 			</div>
 		</div>
 		<!-- End CONTENT section --> 
+@endforeach
 @endsection
