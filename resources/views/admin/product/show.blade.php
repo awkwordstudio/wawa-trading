@@ -1,7 +1,6 @@
 @extends('app')
 
 @section('content')
-@foreach($prod as $p)
 <!-- CONTENT section -->
 		<div id="pageContent">
 			<div class="container">
@@ -337,8 +336,8 @@
 							<div class="col-sm-6">
 								<a href="listing-without-col-without-static-block_06.html" class="banner banner--md link-img-hover">
 								<span class="figure">
-									<img src="/assets/images/custom/category-women-1.jpg" alt="" class="vis-hid-img-small " /> 
-									<img src="/assets/images/custom/category-women-1-xl.jpg" alt="" class="vis-hid-img-big  " />
+									<img src="images/custom/category-women-1.jpg" alt="" class="vis-hid-img-small " /> 
+									<img src="images/custom/category-women-1-xl.jpg" alt="" class="vis-hid-img-big  " />
 									<span class="figcaption">
 										<span class="block-table">
 											<span class="block-table-cell">
@@ -354,8 +353,8 @@
 							<div class="col-sm-6">
 								<a href="listing-without-col-without-static-block_06.html" class="banner banner--md link-img-hover">
 								<span class="figure">
-									<img src="/assets/images/custom/category-women-2.jpg" alt="" class="vis-hid-img-small" /> 
-									<img src="/assets/images/custom/category-women-2-xl.jpg" alt="" class="vis-hid-img-big" />
+									<img src="images/custom/category-women-2.jpg" alt="" class="vis-hid-img-small" /> 
+									<img src="images/custom/category-women-2-xl.jpg" alt="" class="vis-hid-img-big" />
 									<span class="figcaption">
 										<span class="block-table">
 											<span class="block-table-cell">
@@ -376,42 +375,42 @@
 						<div class="row">
 							<div class="subcategory-item col-sm-4 col-xs-6 col-xl-one-fifth">
 								<a href="listing-without-col-without-static-block_06.html">
-									<span class="figure"> <img src="/assets/images/custom/subcategory-1.jpg" alt="" class="img-responsive" /> </span>
+									<span class="figure"> <img src="images/custom/subcategory-1.jpg" alt="" class="img-responsive" /> </span>
 									<h3 class="subcategory-item__title">Blouses & Shirts</h3>
 								</a>
 								
 							</div>
 							<div class="subcategory-item col-sm-4 col-xs-6 col-xl-one-fifth">
 								<a href="listing-without-col-without-static-block_06.html">
-									<span class="figure"> <img src="/assets/images/custom/subcategory-2.jpg" alt=""  class="img-responsive" /> </span>
+									<span class="figure"> <img src="images/custom/subcategory-2.jpg" alt=""  class="img-responsive" /> </span>
 									<h3 class="subcategory-item__title">Dresses</h3>
 								</a>
 								
 							</div>
 							<div class="subcategory-item col-sm-4 col-xs-6 col-xl-one-fifth">
 								<a href="listing-without-col-without-static-block_06.html">
-								<span class="figure"> <img src="/assets/images/custom/subcategory-3.jpg" alt="" class="img-responsive" /> </span>
+								<span class="figure"> <img src="images/custom/subcategory-3.jpg" alt="" class="img-responsive" /> </span>
 								<h3 class="subcategory-item__title">Tops & T-shirts</h3>
 								</a>
 								
 							</div>
 							<div class="subcategory-item col-sm-4 col-xs-6 col-xl-one-fifth">
 								<a href="listing-without-col-without-static-block_06.html">
-								<span class="figure"> <img src="/assets/images/custom/subcategory-4.jpg" alt=""  class="img-responsive" /> </span>
+								<span class="figure"> <img src="images/custom/subcategory-4.jpg" alt=""  class="img-responsive" /> </span>
 								<h3 class="subcategory-item__title">Sleeveless Tops</h3>
 								</a>
 								
 							</div>
 							<div class="subcategory-item col-sm-4 col-xs-6 col-xl-one-fifth">
 								<a href="listing-without-col-without-static-block_06.html">
-								<span class="figure"> <img src="/assets/images/custom/subcategory-5.jpg" alt="" class="img-responsive" /> </span>
+								<span class="figure"> <img src="images/custom/subcategory-5.jpg" alt="" class="img-responsive" /> </span>
 								<h3 class="subcategory-item__title">Jackets</h3>
 								</a>
 								
 							</div>
 							<div class="subcategory-item col-sm-4 col-xs-6 col-xl-one-fifth">
 								<a href="listing-without-col-without-static-block_06.html">
-								<span class="figure"> <img src="/assets/images/custom/subcategory-6.jpg" alt="" class="img-responsive" /> </span>
+								<span class="figure"> <img src="images/custom/subcategory-6.jpg" alt="" class="img-responsive" /> </span>
 								<h3 class="subcategory-item__title">Outerwear</h3>
 								</a>
 								
@@ -462,8 +461,9 @@
 						</div>
 						<!-- /filters row -->
 						<div class="product-listing row">
+						@foreach($prod as $p)
 							<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-one-fifth">
-								<!-- product -->
+								<!-- product -->							
 								<div class="product product--zoom">
 									<div class="product__inside">
 										<!-- product image -->
@@ -471,27 +471,34 @@
 											<!-- product image carousel -->
 											<div class="product__inside__carousel slide" data-ride="carousel">
 												<div class="carousel-inner" role="listbox">
-													<div class="item active"> <a href="/admin/product/show"><img src="/assets/images/product/wshow1.jpg" alt=""></a> </div>
-													<div class="item"> <a href="/admin/product/show"><img src="/assets/images/product/wshow2.jpg" alt=""></a> </div>
-													<div class="item"> <a href="/admin/product/show"><img src="/assets/images/product/wshow3.jpg" alt=""></a> </div>
+													<div class="item active"> <a href="product.html"><img src="/assets/images/product/wshow1.jpg" alt=""></a> </div>
+													<div class="item"> <a href="product.html"><img src="/assets/images/product/wshow2.jpg" alt=""></a> </div>
+													<div class="item"> <a href="product.html"><img src="/assets/images/product/wshow3.jpg" alt=""></a> </div>
 												</div>
 												<!-- Controls --> 
 												<a class="carousel-control next"></a> <a class="carousel-control prev"></a> 
 											</div>
 											<!-- /product image carousel --> 
 											<!-- quick-view --> 
-											<a href="/admin/product/show" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
+											<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 											<!-- /quick-view --> 
 											<!-- countdown_box -->
-											<!-- <div class="countdown_box">
+											<div class="countdown_box">
 												<div class="countdown_inner">
 													<div id="countdown1"></div>
 												</div>
-											</div> -->
+											</div>
 											<!-- /countdown_box --> 
 										</div>
 										<!-- /product image --> 
-										
+										<!-- label news -->
+										<div class="product__label product__label--right product__label--new"> <span>new</span> </div>
+										<!-- /label news --> 
+										<!-- label sale -->
+										<div class="product__label product__label--left product__label--sale"> <span>Sale<br>
+											-20%</span> 
+										</div>
+										<!-- /label sale --> 
 										<!-- product name -->
 										<div class="product__inside__name">
 											<h2><a href="product.html">{{$p->name}}</a></h2>
@@ -502,7 +509,7 @@
 										<div class="product__inside__description row-mode-visible"> Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </div>
 										<!-- /product description --> 
 										<!-- product price -->
-										<div class="product__inside__price price-box">Rs.{{$p->price}}<span class="price-box__old">$28.00</span></div>
+										<div class="product__inside__price price-box">{{$p->price}}<span class="price-box__old">$28.00</span></div>
 										<!-- /product price --> 
 										<!-- product review --> 
 										<!-- visible only in row-view mode -->
@@ -531,15 +538,17 @@
 										</div>
 									</div>
 								</div>
+								
 								<!-- /product --> 
 							</div>
+						@endforeach
 							<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-one-fifth">
 								<!-- product -->
 								<div class="product product--zoom">
 									<div class="product__inside">
 										<!-- product image -->
 										<div class="product__inside__image">
-											<a href="product.html"> <img src="/assets/images/product/product-2.jpg" alt=""> </a> 
+											<a href="product.html"> <img src="images/product/product-2.jpg" alt=""> </a> 
 											<!-- quick-view --> 
 											<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 											<!-- /quick-view --> 
@@ -547,7 +556,7 @@
 										<!-- /product image --> 
 										<!-- product name -->
 										<div class="product__inside__name">
-											<h2><a href="product.html">{{$p->name}}</a></h2>
+											<h2><a href="product.html">Mauris lacinia lectus</a></h2>
 										</div>
 										<!-- /product name -->                 <!-- product description --> 
 										<!-- visible only in row-view mode -->
@@ -590,7 +599,7 @@
 									<div class="product__inside">
 										<!-- product image -->
 										<div class="product__inside__image">
-											<a href="product.html"> <img src="/assets/images/product/product-3.jpg" alt=""> </a> 
+											<a href="product.html"> <img src="images/product/product-3.jpg" alt=""> </a> 
 											<!-- quick-view --> 
 											<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 											<!-- /quick-view --> 
@@ -643,7 +652,7 @@
 									<div class="product__inside">
 										<!-- product image -->
 										<div class="product__inside__image">
-											<a href="product.html"> <img src="/assets/images/product/product-4.jpg" alt=""> </a> 
+											<a href="product.html"> <img src="images/product/product-4.jpg" alt=""> </a> 
 											<!-- quick-view --> 
 											<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 											<!-- /quick-view --> 
@@ -692,7 +701,7 @@
 									<div class="product__inside">
 										<!-- product image -->
 										<div class="product__inside__image">
-											<a href="product.html"> <img src="/assets/images/product/product-5.jpg" alt=""> </a> 
+											<a href="product.html"> <img src="images/product/product-5.jpg" alt=""> </a> 
 											<!-- quick-view --> 
 											<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 											<!-- /quick-view --> 
@@ -741,7 +750,7 @@
 									<div class="product__inside">
 										<!-- product image -->
 										<div class="product__inside__image">
-											<a href="product.html"> <img src="/assets/images/product/product-1.jpg" alt=""> </a> 
+											<a href="product.html"> <img src="images/product/product-1.jpg" alt=""> </a> 
 											<!-- quick-view --> 
 											<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 											<!-- /quick-view --> 
@@ -790,7 +799,7 @@
 									<div class="product__inside">
 										<!-- product image -->
 										<div class="product__inside__image">
-											<a href="product.html"> <img src="/assets/images/product/product-8.jpg" alt=""> </a> 
+											<a href="product.html"> <img src="images/product/product-8.jpg" alt=""> </a> 
 											<!-- quick-view --> 
 											<a href="#" data-toggle="modal" data-target="#quickViewModal" class="quick-view"><b><span class="icon icon-visibility"></span> Quick view</b> </a>  
 											<!-- /quick-view --> 
@@ -834,6 +843,7 @@
 								<!-- /product --> 
 							</div>					
 						</div>
+						
 						<!-- filters row -->
 						<div class="filters-row">
 							<div class="pull-left">
@@ -885,5 +895,4 @@
 			</div>
 		</div>
 		<!-- End CONTENT section --> 
-@endforeach
 @endsection

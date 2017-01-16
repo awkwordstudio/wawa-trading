@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Category;
 use App\Product;
+use App\CreateCategoryProducts;
 
 class CategoryController extends Controller
 {
@@ -34,6 +35,13 @@ class CategoryController extends Controller
    {
      $res=Category::All();
      return view('/admin/product/index')->with(['res'=>$res]);
+   }
+   public function show($category_id)
+ 
+   {
+     $category=Category::find($category_id);
+     $products= $category->products;
+     return view('admin.category.show')->with(['products'=>$products]);
    }
 
 }

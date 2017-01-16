@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategoryProductsTable extends Migration
+class CreateCreateCategoryProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateCategoryProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('category__products', function (Blueprint $table) {
+        Schema::create('category_product', function (Blueprint $table) {
             $table->integer('category_id')->unsigned();
             $table->integer('product_id')->unsigned();
             $table->timestamps();
@@ -32,6 +32,7 @@ class CreateCategoryProductsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('category__products');
+        Schema::drop('category_product');
     }
 }
+

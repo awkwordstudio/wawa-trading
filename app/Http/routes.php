@@ -43,6 +43,8 @@ Route::get('/admin/product/show','ProductController@display');
 Route::get('admin/category/create','CategoryController@create');
 Route::post('admin/category/create','CategoryController@store');
 Route::get('/admin/product/index','CategoryController@index');
+Route::get('admin/category/show/{category_id}','CategoryController@show');
+
 /*=====  End of Category Route  ======*/
 
 
