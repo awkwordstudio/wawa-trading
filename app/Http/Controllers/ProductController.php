@@ -25,7 +25,7 @@ class ProductController extends Controller
    	$sku=$input['sku'];
    	$desc=$input['desc'];	
    	$price=$input['price'];
-   	$disc=$input['disc'];
+   	$disc=$input['discount'];
    	
 
    	 $product= ['name'=>$name,'slug'=>$slug,'sku'=>$sku,'description'=>$desc, 'price'=>$price,'discount'=>$disc];
