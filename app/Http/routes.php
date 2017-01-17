@@ -20,7 +20,6 @@ Route::get('policy','PageController@policy');
 Route::get('about','PageController@about');
 Route::get('contact','PageController@contact');
 Route::get('app','PageController@app');
-
 /*=====  End of Static pages  ======*/
 
 Route::get('home','HomeController@home');
@@ -33,8 +32,8 @@ Route::get('checkout','CheckoutController@check');
 =============================================*/
 Route::get('/admin/product/create','ProductController@create');
 Route::post('/admin/product/create','ProductController@store');
-/*Route::get('/admin/product/show/{id}','ProductController@show');
-Route::get('/admin/product/show','ProductController@display');*/
+Route::get('/admin/product/show/{id}','ProductController@display');
+Route::get('/admin/product/show','ProductController@display');
 /*=====  End of Product Route  ======*/
 
 /*=============================================

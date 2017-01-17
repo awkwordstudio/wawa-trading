@@ -476,10 +476,10 @@
 											<!-- product image carousel -->
 											<div class="product__inside__carousel slide" data-ride="carousel">
 												<div class="carousel-inner" role="listbox">
-												@foreach($product->photos as $photo)
-													<div class="item active"> <a href="product.html">   
+													<div class="item active"> <a href="/admin/product/show/{id}">
+                                                    @foreach($product->photos as $photo)
 													<img src="/assets/images/product/{{$photo->url}}" alt=""></a> </div>
-												@endforeach
+													@endforeach
 													
 												</div>
 												<!-- Controls --> 
