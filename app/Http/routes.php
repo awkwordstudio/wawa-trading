@@ -30,11 +30,11 @@ Route::get('checkout','CheckoutController@check');
 /*=============================================
 =            Product Route            =
 =============================================*/
-Route::get('/admin/product/create','ProductController@create');
-Route::post('/admin/product/create','ProductController@store');
-Route::get('/admin/product/show/{id}','ProductController@display');
-Route::get('/admin/product/show','ProductController@display');
-/*=====  End of Product Route  ======*/
+Route::get('admin/product/create','ProductController@create');
+Route::post('admin/product/create','ProductController@store');
+Route::get('admin/product/show/{product_id}','ProductController@show');
+/*Route::get('/admin/product/show','ProductController@display');
+*//*=====  End of Product Route  ======*/
 
 /*=============================================
 =            Category Route           =

@@ -15,51 +15,50 @@
 							<div class="row">
 								<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 hidden-xs">
 									<div class="product-main-image">
-										<div class="product-main-image__item"><img class="product-zoom" src='images/product/product-big-1.jpg' data-zoom-image="images/product/product-big-1-zoom.jpg" alt="" /></div>
+									@foreach($product->photos as $key=>$photo)
+									<div class="product-main-image__item @if($key==0) active @endif">
+										<img class="product-zoom" src='/assets/images/product/{{$photo->url}}' data-zoom-image="/assets/images/product/{{$photo->url}}" alt="" />
+									</div>
 										<div class="product-main-image__zoom"></div>
+									@endforeach
 									</div>
 									<div class="product-images-carousel">
 										<ul id="smallGallery">
-											<li><a href="#" data-image="images/product/product-big-1.jpg" data-zoom-image="images/product/product-big-1-zoom.jpg"><img src="images/product/product-small-1.jpg" alt="" /></a></li>
 											<li><a href="#" data-image="images/product/product-big-2.jpg" data-zoom-image="images/product/product-big-2-zoom.jpg"><img src="images/product/product-small-2.jpg" alt="" /></a></li>
-											<li><a href="#" data-image="images/product/product-big-3.jpg" data-zoom-image="images/product/product-big-3-zoom.jpg"><img src="images/product/product-small-3.jpg" alt="" /></a></li>
-											<li><a href="#" data-image="images/product/product-big-4.jpg" data-zoom-image="images/product/product-big-4-zoom.jpg"><img src="images/product/product-small-4.jpg" alt="" /></a></li>
-											<li><a href="#" data-image="images/product/product-big-5.jpg" data-zoom-image="images/product/product-big-5-zoom.jpg"><img src="images/product/product-small-5.jpg" alt="" /></a></li>
-										</ul>
+											
+											<li><a href="#" data-image="images/product/product-big-2.jpg" data-zoom-image="images/product/product-big-2-zoom.jpg"><img src="images/product/product-small-2.jpg" alt="" /></a></li>
 									</div>
 									<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="video-link"><span class="icon icon-videocam"></span>Video</a>
 								</div>
 								<div class="product-info col-sm-6 col-md-6 col-lg-6 col-xl-6">
 									<div class="wrapper hidden-xs">
-										<div class="product-info__sku pull-left">SKU: <strong>mtk012c</strong></div>
+										<div class="product-info__sku pull-left">SKU: <strong>{{$product->sku}}</strong></div>
 										<div class="product-info__availability pull-right">Availability:   <strong class="color">In Stock</strong></div>
 									</div>
 									<div class="product-info__title">
-										<h2>Lorem ipsum dolor sit ctetur</h2>
+										<h2>{{$product->name}}</h2>
 									</div>
 									<div class="wrapper visible-xs">
-										<div class="product-info__sku pull-left">SKU: <strong>mtk012c</strong></div>
+										<div class="product-info__sku pull-left">SKU: <strong>{{$product->sku}}</strong></div>
 										<div class="product-info__availability pull-right">Availability:   <strong class="color">In Stock</strong></div>
 									</div>
 									<div class="visible-xs">
 										<div class="clearfix"></div>
 										<ul id="mobileGallery">
-											<li><a href="#" data-image="images/product/product-big-1.jpg" data-zoom-image="images/product/product-big-1-zoom.jpg"><img src="images/product/product-small-1.jpg" alt="" /></a></li>
-											<li><a href="#" data-image="images/product/product-big-2.jpg" data-zoom-image="images/product/product-big-2-zoom.jpg"><img src="images/product/product-small-2.jpg" alt="" /></a></li>
-											<li><a href="#" data-image="images/product/product-big-3.jpg" data-zoom-image="images/product/product-big-3-zoom.jpg"><img src="images/product/product-small-3.jpg" alt="" /></a></li>
-											<li><a href="#" data-image="images/product/product-big-4.jpg" data-zoom-image="images/product/product-big-4-zoom.jpg"><img src="images/product/product-small-4.jpg" alt="" /></a></li>
-											<li><a href="#" data-image="images/product/product-big-5.jpg" data-zoom-image="images/product/product-big-5-zoom.jpg"><img src="images/product/product-small-5.jpg" alt="" /></a></li>
+											<li><a href="#" data-image="/assets/images/product/{{$photo->url}}" data-zoom-image="/assets/images/product/{{$photo->url}}"><img src="/assets/images/product/{{$photo->url}}" alt="" /></a></li>
+											
+											<li><a href="#" data-image="/assets/images/product/{{$photo->url}}" data-zoom-image="/assets/images/product/{{$photo->url}}"><img src="/assets/images/product/{{$photo->url}}" alt="" /></a></li>
 										</ul>
 									</div>
-									<div class="price-box product-info__price"><span class="price-box__new">$65.00</span> <span class="price-box__old">$84.00</span></div>
+									<div class="price-box product-info__price"><span class="price-box__new">{{$product->price}}</span> <span class="price-box__old">$84.00</span></div>
 									<div class="product-info__review">
 										<div class="rating"> <span class="icon-star"></span> <span class="icon-star"></span> <span class="icon-star"></span> <span class="icon-star"></span> <span class="icon-star empty-star"></span> </div>
 										<a href="#">1 Review(s)</a> <a href="#">Add Your Review</a> 
 									</div>
 									<div class="divider divider--xs product-info__divider hidden-xs"></div>
 									<div class="product-info__description hidden-xs">
-										<div class="product-info__description__brand"><img src="images/custom/brand.png"  alt="" /> </div>
-										<div class="product-info__description__text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</div>
+										<div class="product-info__description__brand"><img src="images/custom/brand.png"  alt="brand image" /> </div>
+										<div class="product-info__description__text">DESCRIPTION:{{$product->description}}</div>
 									</div>
 									<div class="divider divider--xs product-info__divider"></div>
 									<div class="wrapper">

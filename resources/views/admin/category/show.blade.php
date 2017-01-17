@@ -461,14 +461,10 @@
 							</div>
 						</div>
 						<!-- /filters row -->
-
-						<!--=====================================
-						=            listing of all products           =
-						======================================-->
 						<div class="product-listing row">
 						@foreach($products as $product)
 							<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-one-fifth">
-								<!-- product -->							
+								<!-- product -->
 								<div class="product product--zoom">
 									<div class="product__inside">
 										<!-- product image -->
@@ -476,11 +472,15 @@
 											<!-- product image carousel -->
 											<div class="product__inside__carousel slide" data-ride="carousel">
 												<div class="carousel-inner" role="listbox">
-													<div class="item active"> <a href="/admin/product/show/{id}">
-                                                    @foreach($product->photos as $photo)
-													<img src="/assets/images/product/{{$photo->url}}" alt=""></a> </div>
-													@endforeach
-													
+												@foreach($product->photos as $key=>$photo)
+													<div class="item @if($key==0) active @endif"> <a href="/admin/product/show/{{$product->id}}"><img src="/assets/images/product/{{$photo->url}}" alt=""></a> 
+													</div>
+
+													<div class="item"> <a href="/admin/product/show/{{$product->id}}"><img src="/assets/images/product/{{$photo->url}}" alt=""></a>
+													 </div>
+													<div class="item"> <a href="/admin/product/show/{{$product->id}}"><img src="/assets/images/product/{{$photo->url}}" alt=""></a> 
+													</div>
+												@endforeach	
 												</div>
 												<!-- Controls --> 
 												<a class="carousel-control next"></a> <a class="carousel-control prev"></a> 
@@ -513,7 +513,7 @@
 										<!-- /product name --> 
 										<!-- product description --> 
 										<!-- visible only in row-view mode -->
-										<div class="product__inside__description row-mode-visible"> Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </div>
+										<div class="product__inside__description row-mode-visible">{{$product->description}}</div>
 										<!-- /product description --> 
 										<!-- product price -->
 										<div class="product__inside__price price-box">{{$product->price}}<span class="price-box__old">$28.00</span></div>
@@ -547,11 +547,9 @@
 								</div>
 								<!-- /product --> 
 							</div>
-						@endforeach					
+						@endforeach	
+												
 						</div>
-						
-						<!--====  End of listing of all products  ====-->
-						
 						<!-- filters row -->
 						<div class="filters-row">
 							<div class="pull-left">
@@ -602,6 +600,6 @@
 				<!-- /two columns --> 
 			</div>
 		</div>
-		<!-- End CONTENT section --> 
+		<!-- End CONTENT section -->
 
 @endsection

@@ -72,18 +72,33 @@
                                             </li>                                           
                                             <li class="dropdown dropdown-mega-menu">
                                                 <span class="dropdown-toggle extra-arrow"></span>
-                                                <a href="/admin/category/index" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Category</span></a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Category</span></a>
                                                 <ul class="dropdown-menu megamenu image-links" role="menu">
                                                     <li class="dl-back"><a href="#"><span class="icon icon-chevron_left"></span>back</a></li>
                                                     <li class="col-one-fourth">
                                                         <span class="image-link">
                                                         <a href="listing.html">
-                                                        <span class="figure"><img class="img-responsive" src="images/custom/listing-img-1.png" alt=""/></span>
-                                                        <span class="figcaption text-uppercase">left column</span>
+                                                        <span class="figure"><img class="img-responsive" src="/assets/images/category/men.png" alt="Men's"/></span>
+                                                        <span class="figcaption text-uppercase">Men's</span>
                                                         </a>
                                                         </span>
                                                     </li>
-                                                    
+                                                    <li class="col-one-fourth">
+                                                        <span class="image-link">
+                                                        <a href="listing-left-right-col.html">
+                                                        <span class="figure"><img class="img-responsive" src="/assets/images/category/women.png" alt=""/></span>
+                                                        <span class="figcaption text-uppercase">Women's</span>
+                                                        </a>
+                                                        </span>
+                                                    </li>
+                                                    <li class="col-one-fourth">
+                                                        <span class="image-link">
+                                                        <a href="listing-left-right-col.html">
+                                                        <span class="figure"><img class="img-responsive" src="/assets/images/category/kid.png" alt=""/></span>
+                                                        <span class="figcaption text-uppercase">Kid's</span>
+                                                        </a>
+                                                        </span>
+                                                    </li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown dropdown-mega-menu">
