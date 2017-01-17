@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategoryProductTable extends Migration
+class CreateCreateCategoryProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -35,3 +35,4 @@ class CreateCategoryProductTable extends Migration
         Schema::drop('category_product');
     }
 }
+
