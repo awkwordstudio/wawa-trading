@@ -72,7 +72,7 @@
                                             </li>                                           
                                             <li class="dropdown dropdown-mega-menu">
                                                 <span class="dropdown-toggle extra-arrow"></span>
-                                                <a href="category" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Category</span></a>
+                                                <a href="/admin/category/index" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Category</span></a>
                                                 <ul class="dropdown-menu megamenu image-links" role="menu">
                                                     <li class="dl-back"><a href="#"><span class="icon icon-chevron_left"></span>back</a></li>
                                                     <li class="col-one-fourth">
