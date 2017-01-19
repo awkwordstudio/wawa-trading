@@ -20,13 +20,14 @@
 										<img class="product-zoom" src='/assets/images/product/{{$photo->url}}' data-zoom-image="/assets/images/product/{{$photo->url}}" alt="" />
 									</div>
 										<div class="product-main-image__zoom"></div>
-									@endforeach
+									
 									</div>
 									<div class="product-images-carousel">
 										<ul id="smallGallery">
-											<li><a href="#" data-image="images/product/product-big-2.jpg" data-zoom-image="images/product/product-big-2-zoom.jpg"><img src="images/product/product-small-2.jpg" alt="" /></a></li>
+											<li><a href="#" data-image="/assets/images/product/{{$photo->url}}" data-zoom-image="/assets/images/product/{{$photo->url}}"><img src="/assets/images/product/{{$photo->url}}" alt="" /></a></li>
 											
-											<li><a href="#" data-image="images/product/product-big-2.jpg" data-zoom-image="images/product/product-big-2-zoom.jpg"><img src="images/product/product-small-2.jpg" alt="" /></a></li>
+											<!-- <li><a href="#" data-image="images/product/product-big-2.jpg" data-zoom-image="images/product/product-big-2-zoom.jpg"><img src="images/product/product-small-2.jpg" alt="" /></a></li> -->
+									@endforeach
 									</div>
 									<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="video-link"><span class="icon icon-videocam"></span>Video</a>
 								</div>
