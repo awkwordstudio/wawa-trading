@@ -46,8 +46,6 @@ Route::get('admin/category/show/{category_id}','CategoryController@show');
 
 /*=====  End of Category Route  ======*/
 
-
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes

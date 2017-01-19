@@ -67,38 +67,22 @@
                                         <ul class="nav navbar-nav">
                                             <li class="dl-close"><a href="#"><span class="icon icon-close"></span>close</a></li>                                        
                                             <li class="dropdown dropdown-mega-menu">                                            
-                                                <a href="home" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Home</span></a>
+                                                <a href="/home" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Home</span></a>
                                                 
                                             </li>                                           
                                             <li class="dropdown dropdown-mega-menu">
                                                 <span class="dropdown-toggle extra-arrow"></span>
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Category</span></a>
                                                 <ul class="dropdown-menu megamenu image-links" role="menu">
+                                                @foreach($categories as $category)
                                                     <li class="dl-back"><a href="#"><span class="icon icon-chevron_left"></span>back</a></li>
                                                     <li class="col-one-fourth">
-                                                        <span class="image-link">
-                                                        <a href="listing.html">
-                                                        <span class="figure"><img class="img-responsive" src="/assets/images/category/men.png" alt="Men's"/></span>
-                                                        <span class="figcaption text-uppercase">Men's</span>
+                                                        <a href="/admin/category/show/{{$category->id}}">
+                                                        <span class="figcaption text-uppercase">{{$category->name}}</span>
                                                         </a>
                                                         </span>
                                                     </li>
-                                                    <li class="col-one-fourth">
-                                                        <span class="image-link">
-                                                        <a href="listing-left-right-col.html">
-                                                        <span class="figure"><img class="img-responsive" src="/assets/images/category/women.png" alt=""/></span>
-                                                        <span class="figcaption text-uppercase">Women's</span>
-                                                        </a>
-                                                        </span>
-                                                    </li>
-                                                    <li class="col-one-fourth">
-                                                        <span class="image-link">
-                                                        <a href="listing-left-right-col.html">
-                                                        <span class="figure"><img class="img-responsive" src="/assets/images/category/kid.png" alt=""/></span>
-                                                        <span class="figcaption text-uppercase">Kid's</span>
-                                                        </a>
-                                                        </span>
-                                                    </li>
+                                                @endforeach
                                                 </ul>
                                             </li>
                                             <li class="dropdown dropdown-mega-menu">
@@ -119,7 +103,7 @@
                                             </li>
                                             <li class="dropdown dropdown-mega-menu">
                                                 <span class="dropdown-toggle extra-arrow"></span>
-                                                <a href="contact" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Contact Us</span></a>
+                                                <a href="/contact" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Contact Us</span></a>
                                                 <ul class="dropdown-menu megamenu image-links" role="menu">
                                                     <li class="dl-back"><a href="#"><span class="icon icon-chevron_left"></span>back</a></li>
                                                     <li class="col-one-third">
@@ -135,7 +119,7 @@
                                             </li>
                                             <li class="dropdown dropdown-mega-menu">
                                                 <span class="dropdown-toggle extra-arrow"></span>
-                                                <a href="policy" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Policy</span></a>
+                                                <a href="/policy" class="dropdown-toggle" data-toggle="dropdown"><span class="act-underline">Policy</span></a>
                                                 <ul class="dropdown-menu megamenu image-links" role="menu">
                                                     <li class="dl-back"><a href="#"><span class="icon icon-chevron_left"></span>back</a></li>
                                                     <li class="col-one-fifth">
