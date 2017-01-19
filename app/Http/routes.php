@@ -36,6 +36,21 @@ Route::get('admin/product/show/{product_id}','ProductController@show');
 /*Route::get('/admin/product/show','ProductController@display');
 *//*=====  End of Product Route  ======*/
 
+
+/*=============================================
+=            Order Route            =
+=============================================*/
+Route::post('admin/product/order','OrderController@store');
+/*=====  End of Order Route  ======*/
+
+
+/*====================================
+=            Review Route            =
+====================================*/
+Route::post('admin/product/show/{product_id}','ReviewController@store');
+/*=====  End of Review Route  ======*/
+
+
 /*=============================================
 =            Category Route           =
 =============================================*/

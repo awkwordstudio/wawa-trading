@@ -13,11 +13,24 @@ class Product extends Model
 
      public function categories()
      {
-     	return $this->belongsToMany('App\Category');
+        return $this->belongsToMany('App\Category');
      }
 
      public function photos()
      {
-     	return $this->hasMany('App\Photo');
+        return $this->hasMany('App\Photo');
      }
+
+     public function Reviews()
+     {
+        return $this->hasMany('App\Review');
+     }
+
+     public function customers()
+     {
+        return $this->hasMany('App\Customer');
+     }
+
+     
+
 }

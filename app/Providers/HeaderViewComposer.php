@@ -3,7 +3,11 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Http\Requests;
+use App\Product;
+use App\Category_Product;
 use App\Category;
+use App\Photo;
 
 class HeaderViewComposer extends ServiceProvider
 {
@@ -17,7 +21,8 @@ class HeaderViewComposer extends ServiceProvider
         View()->composer('partial.header' ,function($view)
         {
             $categories=Category::get();
-            $view->with(['categories'=>$categories]);
+            $products=Product::get();
+            $view->with(['categories'=>$categories,'products'=>$products]);
         });
     }
 

@@ -14,21 +14,23 @@
 						<div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
 							<div class="row">
 								<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 hidden-xs">
-									<div class="product-main-image">
 									@foreach($product->photos as $key=>$photo)
+									<div class="product-main-image">
+									
 									<div class="product-main-image__item @if($key==0) active @endif">
 										<img class="product-zoom" src='/assets/images/product/{{$photo->url}}' data-zoom-image="/assets/images/product/{{$photo->url}}" alt="" />
 									</div>
 										<div class="product-main-image__zoom"></div>
-									
 									</div>
+									@endforeach
 									<div class="product-images-carousel">
 										<ul id="smallGallery">
 											<li><a href="#" data-image="/assets/images/product/{{$photo->url}}" data-zoom-image="/assets/images/product/{{$photo->url}}"><img src="/assets/images/product/{{$photo->url}}" alt="" /></a></li>
 											
-											<!-- <li><a href="#" data-image="images/product/product-big-2.jpg" data-zoom-image="images/product/product-big-2-zoom.jpg"><img src="images/product/product-small-2.jpg" alt="" /></a></li> -->
-									@endforeach
-									</div>
+											<li><a href="#" data-image="/assets/images/product/{{$photo->url}}" data-zoom-image="/assets/images/product/{{$photo->url}}"><img src="/assets/images/product/{{$photo->url}}" alt="" /></a></li>
+									</div>									
+									
+
 									<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="video-link"><span class="icon icon-videocam"></span>Video</a>
 								</div>
 								<div class="product-info col-sm-6 col-md-6 col-lg-6 col-xl-6">
@@ -96,7 +98,18 @@
 											</div>
 											<!-- / -->
 										</div>
-										<div class="pull-left"><button type="submit" class="btn btn--ys btn--xxl"><span class="icon icon-shopping_basket"></span> Add to cart</button></div>
+										<div class="pull-left">
+										<form action="/admin/product/order" method="post">
+										<input type="hidden" name="_token" value="{{ csrf_token() }}">
+										<input type="hidden" name="product_id" value="1">
+										<input type="hidden" name="customer_id" value="1">
+										<input type="hidden" name="amount" value="{{$product->price}}">
+										
+											<button type="submit" class="btn btn--ys btn--xxl">
+											<span class="icon icon-shopping_basket"></span> Add to cart
+											</button>
+										</form>
+										</div>
 									</div>
 									<ul class="product-link">
 										<li class="text-right"><a href="#"><span class="icon icon-favorite_border  tooltip-link"></span><span class="text">Add to wishlist</span></a></li>
@@ -229,13 +242,15 @@
 											</table>
 										</div>
 										<div class="divider divider--xs"></div>
-										<form action="#" class="contact-form">
-											<label>Nickname<span class="required">*</span></label>
-											<input type="text" class="input--ys input--ys--full">
-											<label>Summary of Your Review<span class="required">*</span></label>
-											<input type="text" class="input--ys input--ys--full">
-											<label>Review<span class="required">*</span></label>
-											<textarea class="textarea--ys input--ys--full"></textarea>
+										<form action="/admin/product/show/{{$product->id}}" class="contact-form" method="post">
+											<input type="hidden" name="product_id" value="1">
+											<input type="hidden" name="customer_id" value="1">
+											<label>Title of Your Review<span class="required">*</span></label>
+											<input type="text" name="title"class="input--ys input--ys--full">
+											<label>Rating of Your Review<span class="required">*</span></label>
+											<input type="text" name="rating"class="input--ys input--ys--full">
+											<label>Description about your Review<span class="required">*</span></label>
+											<textarea name="description"class="textarea--ys input--ys--full"></textarea>
 											<div class="divider divider--xs"></div>
 											<button type="submit" class="btn btn--ys text-uppercase">Submit Review</button>
 										</form>
@@ -454,7 +469,7 @@
 									<div class="product__inside__hover">
 										<!-- product info -->
 										<div class="product__inside__info">
-											<div class="product__inside__info__btns"> <a href="#" class="btn btn--ys btn--xl"><span class="icon icon-shopping_basket"></span> Add to cart</a>
+											<div class="product__inside__info__btns"> <a href="/admin/product/order" class="btn btn--ys btn--xl"><span class="icon icon-shopping_basket"></span> Add to cart</a>
 												<a href="#" class="btn btn--ys btn--xl visible-xs"><span class="icon icon-favorite_border"></span></a>
 												<a href="#" class="btn btn--ys btn--xl visible-xs"><span class="icon icon-sort"></span></a>
 												<a href="#" data-toggle="modal" data-target="#quickViewModal" class="btn btn--ys btn--xl  row-mode-visible hidden-xs"><span class="icon icon-visibility"></span> Quick view</a> 
