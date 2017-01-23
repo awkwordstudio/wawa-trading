@@ -101,7 +101,7 @@
 										<div class="pull-left">
 										<form action="/admin/product/order" method="post">
 										<input type="hidden" name="_token" value="{{ csrf_token() }}">
-										<input type="hidden" name="product_id" value="1">
+										<input type="hidden" name="product_id" value="{{$product->id}}">
 										<input type="hidden" name="customer_id" value="1">
 										<input type="hidden" name="amount" value="{{$product->price}}">
 										
